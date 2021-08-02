@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0">
+  <display-name>mubco</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  
+  </welcome-file-list>
+  
+    <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>mubco.servlet.AdminServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet mapping. Bu servlete hangi url uzerinden erisilebilecegini tanimlar. -->
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/mubco</url-pattern>
+  </servlet-mapping>
+</web-app>

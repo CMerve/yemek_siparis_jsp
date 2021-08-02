@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+   <meta charset="utf-8">
+    <title>WEBEAT Yemek Sipariş</title>
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/signin.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      html,body{
+      background-image: url('./image/3a4ifc.jpg');    
+      height:100%;
+      width:100%;
+      background-repeat:no-repeat;
+      display:flex;
+      flex-direction:column;
+      background-size: 100% 100%;
+      }
+      .content{     
+      flex:1
+      }
+      footer{
+      float:left;
+      
+      }
+     form{margin-top:60px;}
+    </style>
+   
+  </head>
+  <body >
+    <div class="text-center content" >
+<main class="form-signin">
+  <form action="AdminServlet" method="POST">
+   <div class="form-floating">
+        <img  src="./image/webeat.png"  width=390 height="200">
+    </div>
+
+
+    <div class="form-floating">
+        <label for="floatingInput" style="color:white">Kullanıcı Adı</label>
+      <input type="text" class="form-control" id="floatingInput" placeholder="eater" name="username">
+  
+    </div>
+    <div class="form-floating">
+     <label for="floatingPassword" style="color:white">Şifre</label>
+      <input type="password" class="form-control" id="floatingPassword" placeholder="*****" name="password">
+     
+    </div>
+
+    <input class="w-100 h-50 btn btn-lg "  style="background-color:#bfff00 ;color:white" type="submit" value="Giriş Yap">
+   
+  </form>
+  </br>
+  
+       
+</main>
+
+ 
+  </div>
+
+  </body>
+</html>
